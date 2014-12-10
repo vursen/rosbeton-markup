@@ -60,7 +60,7 @@
     <!-- === Portfolio ========================================================== -->
     <div class="b-portfolio">
       <div class="container">
-        <h2 class="b-portfolio__heading heading-section _dark">Наши работы</h2>
+        <h2 class="b-portfolio__heading section-heading _border_bright _size_l">Наши работы  </h2>
       </div>
     </div>
     <!-- === Steps ============================================================== -->
@@ -105,7 +105,29 @@
       </div>
       <div class="b-order-form__phone"><span></span> Телефон для связи  (812) 982-39-33 </div>
     </div>
-    <!-- === Do not haves ======================================================= -->
+    <!-- === We dont have ======================================================= -->
+    <div class="b-we-dont-have">
+      <div class="container">
+        <h2 class="b-we-dont-have__heading section-heading _border_bright _size_l">Это не к нам</h2>
+        <ul class="b-we-dont-have__list">
+          <li class="b-we-dont-have__item"><img src="img/b-we-dont-have__item-1.png" class="b-we-dont-have__item__image"/>
+            <div class="b-we-dont-have__item__name">Некачественная <br/> продукция</div>
+          </li>
+          <li class="b-we-dont-have__item"><img src="img/b-we-dont-have__item-2.png" class="b-we-dont-have__item__image"/>
+            <div class="b-we-dont-have__item__name">Неверный <br/> объем</div>
+          </li>
+          <li class="b-we-dont-have__item"><img src="img/b-we-dont-have__item-3.png" class="b-we-dont-have__item__image"/>
+            <div class="b-we-dont-have__item__name">Неполная <br/> документация</div>
+          </li>
+          <li class="b-we-dont-have__item"><img src="img/b-we-dont-have__item-4.png" class="b-we-dont-have__item__image"/>
+            <div class="b-we-dont-have__item__name">Срыв сроков</div>
+          </li>
+          <li class="b-we-dont-have__item"><img src="img/b-we-dont-have__item-5.png" class="b-we-dont-have__item__image"/>
+            <div class="b-we-dont-have__item__name">Мошенничество</div>
+          </li>
+        </ul>
+      </div>
+    </div>
     <!-- === Pride ============================================================== -->
     <div class="b-pride">
       <div class="container">
@@ -181,10 +203,23 @@
     </div>
     <!-- ==== Footer ============================================================ -->
     <footer class="b-footer">
-      <div class="container"> </div>
+      <div class="container"> 
+        <form class="b-questions-form b-footer__form">
+          <div class="b-questions-form__heading">Задать вопрос</div>
+          <input type="text" placeholder="Email" name="email" class="form-input _bordered _size_s"/>
+          <input type="text" placeholder="Тема сообщения" name="subject" class="form-input _bordered _size_s"/>
+          <textarea placeholder="Текстовое поле" name="message" class="form-textarea _bordered _size_s"></textarea>
+          <button type="submit" class="btn _default _secondary _size_m">Отправить</button>
+        </form>
+        <div class="b-footer__contacts">
+          <div class="b-footer__contacts__heading">Как нас найти</div>
+          <p class="b-footer__contacts__text">г. Санкт-Петербург, Новоселов, 8 <br/> Тел: (812) 982-39-33</p>
+        </div>
+      </div>
     </footer>
     <!-- === Scripts ============================================================ -->
     <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/sly.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

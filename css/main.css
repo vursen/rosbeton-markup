@@ -205,6 +205,7 @@ img {
   cursor: pointer;
 }
 .btn._default {
+  min-width: 200px;
   font-weight: bold;
   color: #fff;
   text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
@@ -222,41 +223,63 @@ img {
   background: #49b5e3;
 }
 .btn._size_l {
-  min-width: 200px;
   font-size: 25px;
   padding: 12px;
 }
-.form-input {
+.btn._size_m {
+  font-size: 20px;
+  padding: 11px;
+}
+.form-input,
+.form-textarea {
   display: inline-block;
   vertical-align: middle;
   background: #fff;
   font-family: inherit;
   outline: none;
   border: none;
+}
+.form-input::-webkit-input-placeholder,
+.form-textarea::-webkit-input-placeholder {
+  line-height: 1.35;
+}
+.form-input:-moz-placeholder,
+.form-textarea:-moz-placeholder {
+  line-height: 1.35;
+}
+.form-input::-moz-placeholder,
+.form-textarea::-moz-placeholder {
+  line-height: 1.35;
+}
+.form-input:-ms-input-placeholder,
+.form-textarea:-ms-input-placeholder {
+  line-height: 1.35;
+}
+.form-input.placeholder,
+.form-textarea.placeholder {
+  line-height: 1.35;
+}
+.form-input._bordered,
+.form-textarea._bordered {
+  box-shadow: inset 0 0 1px #ccc;
+  border: 1px solid #cfcfd0;
+  border-radius: 4px;
+}
+.form-input._shadowed,
+.form-textarea._shadowed {
+  box-shadow: 0 2px 1px -1px #cdc190;
+  border-bottom: 1px solid #c7c7c7;
   border-radius: 7px;
 }
-.form-input::-webkit-input-placeholder {
-  line-height: 1.35;
-}
-.form-input:-moz-placeholder {
-  line-height: 1.35;
-}
-.form-input::-moz-placeholder {
-  line-height: 1.35;
-}
-.form-input:-ms-input-placeholder {
-  line-height: 1.35;
-}
-.form-input.placeholder {
-  line-height: 1.35;
-}
-.form-input._shadowed {
-  border-bottom: 1px solid #c7c7c7;
-  box-shadow: 0 2px 1px -1px #cdc190;
-}
-.form-input._size_l {
-  font-size: 18px;
+.form-input._size_l,
+.form-textarea._size_l {
   padding: 17px 17px 16px;
+  font-size: 18px;
+}
+.form-input._size_s,
+.form-textarea._size_s {
+  padding: 10px;
+  font-size: 14px;
 }
 .section-heading {
   font-weight: 300;
@@ -316,6 +339,28 @@ img {
   height: 504px;
   background: url("../img/b-footer.jpg") no-repeat center center;
   padding: 70px 0 0;
+}
+.b-footer .container {
+  position: relative;
+}
+.b-footer__form {
+  float: right;
+}
+.b-footer__contacts {
+  position: absolute;
+  left: -45px;
+  top: 70px;
+  width: 382px;
+  height: 203px;
+  padding: 28px 20px 70px;
+  background: url("../img/b-footer__contacts.png") no-repeat center;
+  font-size: 22px;
+  font-weight: 300;
+}
+.b-footer__contacts__heading {
+  font-size: 25px;
+  text-transform: uppercase;
+  margin: 0 0 10px;
 }
 .b-guarantee {
   padding: 60px 0;
@@ -395,6 +440,9 @@ img {
   width: 23px;
   height: 33px;
 }
+.b-portfolio {
+  padding: 50px 0 0;
+}
 .b-price {
   padding: 50px 0;
 }
@@ -403,7 +451,7 @@ img {
   color: #fff;
 }
 .b-price._two {
-  background: url("../img/b-price_two.jpg") repeat;
+  background: url("../img/checkered-bg.jpg") repeat;
 }
 .b-price__text {
   margin: 0 0 20px;
@@ -416,7 +464,7 @@ img {
   text-transform: uppercase;
 }
 .b-pride {
-  padding: 55px 0;
+  padding: 60px 0;
   text-align: center;
 }
 .b-pride__col {
@@ -489,8 +537,35 @@ img {
   font-size: 33px;
   text-transform: uppercase;
 }
+.b-questions-form {
+  width: 530px;
+  padding: 25px;
+  border-radius: 6px;
+  background: #fff;
+}
 .b-questions-form__heading {
+  margin: 0 0 10px;
+  font-weight: 300;
   font-size: 20px;
+  text-transform: uppercase;
+}
+.b-questions-form .form-input {
+  width: 46.5%;
+}
+.b-questions-form .form-input + .form-input {
+  margin-left: 6%;
+}
+.b-questions-form .form-textarea {
+  width: 100%;
+  height: 75px;
+}
+.b-questions-form .form-input,
+.b-questions-form .form-textarea {
+  margin: 10px 0;
+}
+.b-questions-form .btn {
+  display: block;
+  margin: 10px auto 0;
 }
 .b-stats {
   background: #57bbe5;
@@ -572,4 +647,25 @@ img {
   bottom: 0;
   left: 0;
   margin: auto;
+}
+.b-we-dont-have {
+  padding: 60px 0;
+  background: url("../img/checkered-bg.jpg") repeat;
+  text-align: center;
+}
+.b-we-dont-have__item {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 18px;
+  line-height: 1.3;
+}
+.b-we-dont-have__item + .b-we-dont-have__item {
+  margin-left: 90px;
+}
+.b-we-dont-have__item__image {
+  display: block;
+  margin: 0 auto 10px;
+}
+.b-we-dont-have__item__name {
+  text-align: left;
 }
